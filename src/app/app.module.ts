@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent
   ],
+  //component(s) that should be used when starting/initalizing the applciation
   bootstrap: [
     AppComponent
   ]
