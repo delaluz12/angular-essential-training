@@ -2,5 +2,10 @@
   <header>
     <h1>Media Watch List</h1>
     <p class="description">Keeping track of the media I want to watch.</p>
+
   </header>
+  <!-- add the binding of parent component data to child component with property binding === binding target(where to share the data to) is on the left of the equal sign & binding source (data) is on the right-->
+  <!-- add the delete event binding to component as a statement -->
+  <mw-media-item (delete) ="onMediaItemDelete($event)" [mediaItem]="firstMediaItem" ></mw-media-item>
+
 </section>
