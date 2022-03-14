@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./media-item-list.component.css']
 })
 export class MediaItemListComponent {
+  // items that will be looped through and displayed on template via the structural directive ngFor
   mediaItems = [
     {
       id: 1,
