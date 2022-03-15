@@ -1,6 +1,7 @@
-import { Injectable } from '@angular/core';
+ import { Injectable } from '@angular/core';
 
-@Injectable({
+// instead of importing the service at the root app module you can add lines 4-6 and tell it to provide this service in the 'root' meaning the core layer of the app
+ @Injectable({
   providedIn: 'root'
 })
 export class MediaItemService {
