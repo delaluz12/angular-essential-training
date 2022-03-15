@@ -9,6 +9,13 @@
   color: #bdc2c5;
   margin: 0 12px 12px 0;
 }
+:host-context(.medium-movies) .label {
+  background-color: #53ace4;
+}
+// sets styling of the current context to what is in the {} otherwise it will use the global sytling for class = label but in the media-item component it will use this style context
+:host-context(.medium-series) .label {
+  background-color: #45bf94;
+}
 h2 {
   font-size: 1.6em;
   flex: 1;
@@ -38,19 +45,19 @@ h2 {
   cursor: pointer;
 }
 .favorite.is-favorite {
-    fill: #37ad79;
+  fill: #37ad79;
 }
 .favorite.is-favorite-hovering {
-    fill: #45bf94;
+  fill: #45bf94;
 }
 .favorite.is-favorite.is-favorite-hovering {
-    fill: #ec4342;
+  fill: #ec4342;
 }
 .delete {
   display: block;
   background-color: #ec4342;
   padding: 4px;
-  font-size: .8em;
+  font-size: 0.8em;
   border-radius: 4px;
   color: #ffffff;
   cursor: pointer;
@@ -59,7 +66,7 @@ h2 {
   display: block;
   background-color: #37ad79;
   padding: 4px;
-  font-size: .8em;
+  font-size: 0.8em;
   border-radius: 4px;
   color: #ffffff;
   text-decoration: none;
