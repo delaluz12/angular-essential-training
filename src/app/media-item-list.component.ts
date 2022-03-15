@@ -13,9 +13,11 @@ export class MediaItemListComponent implements OnInit {
 
   constructor(
     private mediaItemService: MediaItemService,
+    // ActivatedRoute allows Angular to get information from the currently activated route using this service type
     private activatedRoute: ActivatedRoute) {}
 
   ngOnInit() {
+    // to get back the data that ActivatedRoute.paramMap gets (is an observable) we need to subscribe to it
     this.activatedRoute.paramMap
       .subscribe(paramMap => {
         let medium = paramMap.get('medium');

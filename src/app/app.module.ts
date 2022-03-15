@@ -9,14 +9,15 @@ import { CategoryListPipe } from './category-list.pipe';
 import { lookupListToken, lookupLists } from './providers';
 import { MockXHRBackend } from './mock-xhr-backend';
 import { routing } from './app.routing';
-import { NewItemModule } from './new-item/new-item.module';
+
 
 @NgModule({
   imports: [
+    // this browserModule is that it is designed to be used in at the root NG modlule level aka HERE in this module
     BrowserModule,
     HttpClientModule,
     routing,
-    NewItemModule
+    
   ],
   declarations: [
     AppComponent,
